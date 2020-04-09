@@ -4,17 +4,17 @@ public class Human {
 	int strength = 3;
 	int stealth = 3;
 	int intelligence = 3;
-	private int health = 100;
+	public int health = 100;
 	
-	public int getHumanHealth() {
+	public int getHealth() {
 		return health;
 	}
 
-	public void setHumanHealth(int health) {
+	public void setHealth(int health) {
 		this.health = health;
 	}
 
 	public void attack(Human human) {
-		human.setHumanHealth(human.getHumanHealth() - this.strength);
+		human.setHealth(human.getHealth() - this.strength);
 	}
 }

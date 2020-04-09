@@ -6,10 +6,10 @@ public class Wizard extends Human {
 	int intelligence = 8;
 	
 	public void heal(Human human) {
-		human.setHumanHealth(human.getHumanHealth() + this.intelligence);
+		human.setHealth(human.getHealth() + this.intelligence);
 	}
 	
 	public void fireball(Human human) {
-		human.setHumanHealth(human.getHumanHealth() - (this.intelligence * 3));
+		human.setHealth(human.getHealth() - (this.intelligence * 3));
 	}
 }
